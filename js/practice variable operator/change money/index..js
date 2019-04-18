@@ -14,17 +14,21 @@ function changeMoney()
     {
         alert("vui lòng nhập số tiền cần chuyển đổi")
     }
-    if(Amount != "" )
+    else
     {
         if(fromcurrency == "vietnam" && tocurrency == "usd")
         {
             result = Amount/23;
             document.getElementById("ketqua").innerHTML = result;
         }
-        if(fromcurrency == "usd" && tocurrency == "vietnam")
+        else if(fromcurrency == "usd" && tocurrency == "vietnam")
         {
             result = Amount*23;
             document.getElementById("ketqua").innerHTML = result;
+        }
+        else
+        {
+            alert("vui lòng kiểm tra lại");
         }
     }
 }
