@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h1>tìm kiếm</h1>
+    <input type="text" id="search">
+    <button type="button" onclick="search()">tìm kiếm</button>
+
+    <script>
+        english = ['dog', 'cat', 'house', 'book'];
+        vietnammese = ['cho', 'meo', 'nha', 'sach'];
+      
+    
+        function search()
+        {
+            let value = parseInt(document.getElementById('search').value);
+        
+           if(value <= english.length-1)
+           {
+               
+               let result = vietnammese[value];
+               document.write(result);
+           }
+           else
+           {
+               alert('không tìm thấy');
+           }
+        }
+    </script>
+</body>
+</html>
