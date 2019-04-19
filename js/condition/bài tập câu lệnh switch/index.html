@@ -15,7 +15,7 @@
         
         function getMonth()
         {
-            let month = document.getElementById("month").value;
+            let month = parseInt(document.getElementById("month").value);
             switch(month)
             {
                 case 1:
@@ -36,6 +36,8 @@
                 case 2:
                 document.write('có 28 hoặc 29 ngày');
                 break;
+                default:
+                document.write('sai');
             }
         }
     </script>
