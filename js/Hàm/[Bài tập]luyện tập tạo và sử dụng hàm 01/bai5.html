@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <button type="button" onclick="check()">check</button>
+    <script>
+        let arrayA = ['Polaris', 'Aldebaran', 'Deneb', 'Vega', 'Altair', 'Dubhe', 'Regulus'];
+        let arrayB = [ 'Ursa Minor', 'Tarurus', 'Cygnus', 'Lyra', 'Aquila', 'Ursa Major', 'Leo'];
+        function processStar(starName)
+        {  
+            for (var i=0; i < arrayA.length; i++)
+            {
+                if(starName == arrayA[i])
+                {
+                    return arrayB[i];
+                } 
+            }
+
+            return "No star found!";
+
+        }
+
+var getStar = prompt("Input the star name.");
+var result = processStar(getStar);
+alert(result);
+    </script>
+</body>
+</html>

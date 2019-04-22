@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <html>
+        <input type="text" id="a" placeholder="nhập vào số a">
+        <input type="tex"  id="b" placeholder="nhập vào số b">
+        <button type="button" onclick="check()">check</button>
+    </html>
+    <script>
+        function check(number1, number2)
+        {
+            number1 = parseInt(document.getElementById('a').value);
+            number2 = parseInt(document.getElementById('b').value);
+            if(number1 > number2)
+            {
+                alert('số' + number1 + '>' +number2)
+            }
+            else
+            {
+                sum = number1 + number2;
+                alert('tổng ' +  sum);
+            }
+        }
+    </script>
+</body>
+</html>

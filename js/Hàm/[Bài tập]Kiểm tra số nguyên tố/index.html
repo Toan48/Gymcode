@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+        <label>Kiểm tra số nguyên tố</label>
+        <input id="value" type="number" 
+        oninput="isPrime(this.value)"
+        onchange="isPrime(this.value)">
+    <script>  
+        function isPrime(number)
+        {
+            let value = parseInt(document.getElementById('value').value)
+            let number = value;
+            if(number < 1000)
+            {
+                if(number > 1)
+                {
+                    for(i=2; i<number; i++)
+                    {
+                        if(number % i == 0)
+                        {   
+                            return false;
+                        }
+                        else
+                        {
+                            return true;
+                        }
+                    }
+                }
+                else
+                {
+                    return false;
+                }
+            }
+            return false;
+        }
+    </script>
+</body>
+</html>
