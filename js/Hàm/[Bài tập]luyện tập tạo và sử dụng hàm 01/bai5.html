@@ -9,12 +9,16 @@
 <body>
     <button type="button" onclick="check()">check</button>
     <script>
+        // tạo hai mảng
         let arrayA = ['Polaris', 'Aldebaran', 'Deneb', 'Vega', 'Altair', 'Dubhe', 'Regulus'];
         let arrayB = [ 'Ursa Minor', 'Tarurus', 'Cygnus', 'Lyra', 'Aquila', 'Ursa Major', 'Leo'];
+        // tạo function voi tham số starName
         function processStar(starName)
         {  
+            // chạy vong lặp arrayA
             for (var i=0; i < arrayA.length; i++)
             {
+                // xét điều kiện 
                 if(starName == arrayA[i])
                 {
                     return arrayB[i];
@@ -26,6 +30,7 @@
         }
 
 var getStar = prompt("Input the star name.");
+//dùng hàm với tham số đưa vào là getStar
 var result = processStar(getStar);
 alert(result);
     </script>
