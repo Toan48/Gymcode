@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let r = parseInt(prompt('nhập vào bán kín đường tròn', ''));
+
+        function dienTich(value)
+        {
+            let s = (value * value ) * 3.14;
+            return s;
+        }
+
+        function chuVi(value1)
+        {
+            let c = (value1 * 2) * 3.14;
+            return c;
+        }
+
+        let result = dienTich(r);
+        let result1 = chuVi(r);
+
+        document.write('diện tích hình tròn là: ' + result + '<br>');
+        document.write('chu vi hình tròn là: ' + result1);
+
+    </script>
+</body>
+</html>
