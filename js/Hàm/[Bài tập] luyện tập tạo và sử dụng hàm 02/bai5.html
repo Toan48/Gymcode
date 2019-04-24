@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        value = parseInt(prompt());
+        value1 = parseInt(prompt());
+        value2 = parseInt(prompt());
+
+        function min(a, b , c)
+        {
+            let min = a;
+            if(min > b && c > b)
+            {
+                min = b;
+            }
+            else if( min > c  && b > c)
+            {
+                min = c;
+            }
+            return min;
+        }
+
+        let result = min(value, value1, value2);
+        document.write(result);
+
+
+    </script>
+</body>
+</html>

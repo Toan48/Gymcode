@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <p id="cToF"></p>
+    <p id="cToK"></p>
+    <script>
+        let Temperature = function(celsius)
+        {
+            this.celsius = celsius;
+            this.cToF = function()
+            {
+                let Fahr = this.celsius * 9 / 5 + 32;
+                return Fahr;
+            }
+            this.cToK = function()
+            {
+                let kevin =  this.celsius * 274.15;
+                return kevin;
+            }
+
+        }
+
+        let a = new Temperature(6);
+        document.getElementById('cToF').innerHTML = 'độ c sang độ F: ' + a.cToF();
+        document.getElementById('cToK').innerHTML = 'độ c sang độ K: ' + a.cToK();
+    </script>
+</body>
+</html>
