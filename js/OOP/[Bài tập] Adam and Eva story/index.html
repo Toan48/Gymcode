@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let Apple = function()
+        {
+            this.weight = 10;
+            
+            this.getWeight = function()
+            {
+                return this.weight;
+            }
+            this.isEmpty = function()
+            {
+               return this.weight == 0;
+            }
+            this.decrease = function()
+            {
+                return this.weight--;
+            }
+        }
+
+        let Human = function()
+        {
+            this.name;
+            this.gender;
+            this.weight;
+
+            this.isMale = function()
+            {
+                return this.gender == "M";
+            }
+            this.setGender = function(gender)
+            {
+                this.gender = gender;
+            }
+            this.checkApple = function(apple)
+            {
+                apple.isEmpty();
+            }
+            this.eat = function(apple)
+            {
+                apple.decrease();
+            }
+            this.say = function(something)
+            {
+                console.log(something);
+            }
+            this.getName = function()
+            {
+                return this.name;
+            }
+            this.setName = function(name)
+            {
+                this.name = name;
+            }
+            this.getWeight = function()
+            {
+                return this.weight;
+            }
+            this.setWeight = function(kg)
+            {
+                this.weight = kg;
+            }
+        }
+
+        let apple = new Apple();
+        let adam = new Human();
+       
+        while(apple.getWeight())
+        {
+            adam.eat(apple);
+        }
+      
+        
+        console.log(apple.getWeight());
+
+    </script>
+</body>
+</html>

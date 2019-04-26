@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function primeNumbers(n)
+        {
+            array = [];
+            for (var i = 2; array.length < n; i++)
+            {
+                var divisorFound = false;
+                for (var count = 2; count < i; count++)
+                {
+                    var divisorFound = false;
+                    if (i % count === 0)
+                    {
+                        divisorFound = true;
+                        break;
+                    }
+                }
+                if (divisorFound == false)
+                {
+                    array.push(i);
+                }
+            }
+            return array;
+        }
+
+        console.log(primeNumbers(6));
+
+    </script>
+</body>
+</html>

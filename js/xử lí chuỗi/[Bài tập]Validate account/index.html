@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" name="" id="account">
+    <button type="button" onclick="validateAccount()">click here</button>
+    <p id="result"></p>
+    <script>
+        function validateAccount()
+        {
+            let regex = /^[_a-z0-9]{6,}$/;
+            let str = document.getElementById('account').value;
+            if(regex.test(str))
+            {
+                document.getElementById('result').innerHTML = 'hợp lệ';
+            }
+            else
+            {
+                document.getElementById('result').innerHTML = 'không hợp lệ';
+            }
+        }
+    </script>
+</body>
+</html>
