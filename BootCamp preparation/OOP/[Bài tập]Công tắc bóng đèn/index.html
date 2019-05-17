@@ -12,37 +12,29 @@
     let Electriclamp = function()
     {
         this.status;
-        this.turnOn = function()
-        {
+        this.turnOn = function(){
             this.status = true;
         }
 
-        this.turnOff = function()
-        {
+        this.turnOff = function(){
             this.status = false;
         } 
     }
 
-     let switchButton = function()
-     {
+     let switchButton = function(){
          this.status;
-         this.switchOff = function()
-         {
+         this.switchOff = function(){
             this.status = false;
          }
-         this.switchOn = function()
-         {
+         this.switchOn = function(){
              this.status = true;
          }
 
-         this.connectToLamp = function(electriclamp)
-         {
-             if(this.status == true)
-             {
+         this.connectToLamp = function(electriclamp){
+             if(this.status == true){
                  electriclamp.turnOn();        
              }
-             if(this.status == false)
-             {
+             if(this.status == false){
                 electriclamp.turnOff();
              }
          }

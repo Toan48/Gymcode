@@ -11,20 +11,16 @@
     <p id='getPerimeter'></p>
     <p id='Area'></p>
     <script>
-        let Rectangle = function(width, height)
-        {
+        let Rectangle = function(width, height){
             this.height = height;
             this.width = width;
-            this.getPerimeter = function() 
-            {
+            this.getPerimeter = function() {
                 return (this.height + this.width)*2;
             }
-            this.getArea = function()
-            {
+            this.getArea = function(){
                 return this.height * this.width;
             }
-            this.draw = function()
-            {
+            this.draw = function(){
                 var canvas = document.getElementById("myCanvas");
                 var ctx = canvas.getContext("2d");
                 ctx.fillStyle = 'blue';

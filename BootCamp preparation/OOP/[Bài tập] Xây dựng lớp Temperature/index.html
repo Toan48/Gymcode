@@ -10,16 +10,13 @@
     <p id="cToF"></p>
     <p id="cToK"></p>
     <script>
-        let Temperature = function(celsius)
-        {
+        let Temperature = function(celsius){
             this.celsius = celsius;
-            this.cToF = function()
-            {
+            this.cToF = function(){
                 let Fahr = this.celsius * 9 / 5 + 32;
                 return Fahr;
             }
-            this.cToK = function()
-            {
+            this.cToK = function(){
                 let kevin =  this.celsius * 274.15;
                 return kevin;
             }

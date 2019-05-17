@@ -10,38 +10,30 @@
     <script>
         let arr = [1, 2, 4, 5, 7, 6, 8, 9, 10 ];
 
-        function search(number)
-        {
-            for(i = 0 ; i < arr.length; i++)
-            {
-                if(arr[i] == number)
-                {
+        function search(number){
+            for(i = 0 ; i < arr.length; i++){
+                if(arr[i] == number){
                     alert(arr[i]);
                 }
             }
         }
-        function binarySearch(value, list) 
-        {
+        function binarySearch(value, list) {
             let first = 0;    //left endpoint
             let last = list.length - 1;   //right endpoint
             let position = -1;
             let found = false;
             let middle;
  
-            while (found === false && first <= last) 
-            {
+            while (found === false && first <= last) {
                 middle = Math.floor((first + last)/2);
-                if (list[middle] == value) 
-                {
+                if (list[middle] == value) {
                     found = true;
                     position = middle;
                 } 
-                else if (list[middle] > value) 
-                {  //if in lower half
+                else if (list[middle] > value) {  //if in lower half
                     last = middle - 1;
                 } 
-                else 
-                {  //in in upper half
+                else {  //in in upper half
                     first = middle + 1;
                 }
             }

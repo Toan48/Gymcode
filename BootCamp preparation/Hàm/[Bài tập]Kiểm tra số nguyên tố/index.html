@@ -16,24 +16,18 @@
         {
             let value = parseInt(document.getElementById('value').value)
             let number = value;
-            if(number < 1000)
-            {
-                if(number > 1)
-                {
-                    for(i=2; i<number; i++)
-                    {
-                        if(number % i == 0)
-                        {   
+            if(number < 1000){
+                if(number > 1){
+                    for(i=2; i<number; i++){
+                        if(number % i == 0){   
                             return false;
                         }
-                        else
-                        {
+                        else{
                             return true;
                         }
                     }
                 }
-                else
-                {
+                else{
                     return false;
                 }
             }
