@@ -11,16 +11,13 @@
     <button type="button" onclick="validateAccount()">click here</button>
     <p id="result"></p>
     <script>
-        function validateAccount()
-        {
+        function validateAccount(){
             let regex = /^[_a-z0-9]{6,}$/;
             let str = document.getElementById('account').value;
-            if(regex.test(str))
-            {
+            if(regex.test(str)){
                 document.getElementById('result').innerHTML = 'hợp lệ';
             }
-            else
-            {
+            else{
                 document.getElementById('result').innerHTML = 'không hợp lệ';
             }
         }

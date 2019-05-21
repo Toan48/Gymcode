@@ -16,18 +16,14 @@
         vietnammese = ['cho', 'meo', 'nha', 'sach'];
       
     
-        function search()
-        {
+        function search(){
             let value = parseInt(document.getElementById('search').value);
         
-           if(value <= english.length-1)
-           {
-               
+           if(value <= english.length-1){
                let result = vietnammese[value];
                document.write(result);
            }
-           else
-           {
+           else{
                alert('không tìm thấy');
            }
         }

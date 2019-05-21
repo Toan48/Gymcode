@@ -7,7 +7,6 @@
     <title>Document</title>
 </head>
 <body>
-    <button type="button" onclick="check()">check</button>
     <script>
         // tạo hai mảng
         let arrayA = ['Polaris', 'Aldebaran', 'Deneb', 'Vega', 'Altair', 'Dubhe', 'Regulus'];
@@ -15,17 +14,13 @@
         // tạo function voi tham số starName
         function processStar(starName){  
             // chạy vong lặp arrayA
-            for (var i=0; i < arrayA.length; i++)
-            {
+            for (var i=0; i < arrayA.length; i++){
                 // xét điều kiện 
-                if(starName == arrayA[i])
-                {
+                if(starName == arrayA[i]){
                     return arrayB[i];
                 } 
-            }
-            
+            } 
             return "No star found!";
-
         }
 
 var getStar = prompt("Input the star name.");

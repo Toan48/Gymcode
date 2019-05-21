@@ -13,15 +13,13 @@
     <script>
         let x = 0;
         let array = Array();
-        function add()
-        {
+        function add(){
             array[x] = document.getElementById("value").value;
             x++;
             document.getElementById("value").value = " ";
         }
 
-        function display()
-        {
+        function display(){
             let toString = array.toString();
             let ex = toString.toUpperCase();
             document.write(ex);
