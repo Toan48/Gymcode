@@ -10,18 +10,18 @@
     <script>
         let r = parseInt(prompt('nhập vào bán kín đường tròn', ''));
 
-        function dienTich(value){
+        function Area(value){
             let s = (value * value ) * 3.14;
             return s;
         }
 
-        function chuVi(value1){
+        function Perimeter(value1){
             let c = (value1 * 2) * 3.14;
             return c;
         }
 
-        let result = dienTich(r);
-        let result1 = chuVi(r);
+        let result = Area(r);
+        let result1 = Perimeter(r);
 
         document.write('diện tích hình tròn là: ' + result + '<br>');
         document.write('chu vi hình tròn là: ' + result1);

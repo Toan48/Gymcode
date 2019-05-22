@@ -8,18 +8,21 @@
 </head>
 <body>
     <script>
-        let x = parseInt(prompt('nhập số x: ', ''));
-        let y = parseInt(prompt('nhập số y: ', ''))
-
+        
         function swap(a, b){
             let tmp = a;
             a = b;
             b = tmp;
-            alert('value of x: ' + a + 'value of y: ' + b);
+            return [a, b];
         }
 
-        swap(x,y);
-
+        function main(){
+            let x = parseInt(prompt('nhập số x: ', ''));
+            let y = parseInt(prompt('nhập số y: ', ''));
+            let result = swap(x,y);
+            document.write("giá trị: " + result[0] + "giá trị y: " + result[1]); 
+        }
+        main();
     </script>
 </body>
 </html>
