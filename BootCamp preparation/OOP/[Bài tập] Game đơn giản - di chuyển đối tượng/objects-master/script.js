@@ -49,7 +49,7 @@ function start(){
   }
   else if(hero.left >= window.innerWidth - hero.size && hero.top < window.innerHeight - hero.size)
   {
-    hero.moveDown();
+    hero.moveDown();  
   }
   else if(hero.top >= window.innerHeight - hero.size && hero.left >= 20)
   {

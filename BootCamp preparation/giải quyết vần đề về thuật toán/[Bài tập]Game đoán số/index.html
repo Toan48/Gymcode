@@ -20,7 +20,7 @@
         function binarySearch(value, list) {
             let first = 0;    //left endpoint
             let last = list.length - 1;   //right endpoint
-            let position = -1;
+            let position = 0;
             let found = false;
             let middle;
  
@@ -38,11 +38,12 @@
                 }
             }
             return position;
-            console.log(position);
+            
         }
 
-        search(1);
-        binarySearch(1, arr);
+        //search(1);
+        binarySearch(8, arr);
+        console.log(binarySearch(8, arr));
      
     </script>
 </body>

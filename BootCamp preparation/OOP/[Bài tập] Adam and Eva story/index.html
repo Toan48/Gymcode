@@ -12,60 +12,47 @@
         {
             this.weight = 10;
             
-            this.getWeight = function()
-            {
+            this.getWeight = function(){
                 return this.weight;
             }
-            this.isEmpty = function()
-            {
+            this.isEmpty = function(){
                return this.weight == 0;
             }
-            this.decrease = function()
-            {
+            this.decrease = function(){
                 return this.weight--;
             }
         }
 
-        let Human = function()
-        {
+        let Human = function(){
             this.name;
             this.gender;
             this.weight;
 
-            this.isMale = function()
-            {
+            this.isMale = function(){
                 return this.gender == "M";
             }
-            this.setGender = function(gender)
-            {
+            this.setGender = function(gender){
                 this.gender = gender;
             }
-            this.checkApple = function(apple)
-            {
+            this.checkApple = function(apple){
                 apple.isEmpty();
             }
-            this.eat = function(apple)
-            {
+            this.eat = function(apple){
                 apple.decrease();
             }
-            this.say = function(something)
-            {
+            this.say = function(something){
                 console.log(something);
             }
-            this.getName = function()
-            {
+            this.getName = function(){
                 return this.name;
             }
-            this.setName = function(name)
-            {
+            this.setName = function(name){
                 this.name = name;
             }
-            this.getWeight = function()
-            {
+            this.getWeight = function(){
                 return this.weight;
             }
-            this.setWeight = function(kg)
-            {
+            this.setWeight = function(kg){
                 this.weight = kg;
             }
         }
@@ -73,8 +60,7 @@
         let apple = new Apple();
         let adam = new Human();
        
-        while(apple.getWeight())
-        {
+        while(apple.getWeight()){
             adam.eat(apple);
         }
       
