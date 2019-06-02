@@ -73,8 +73,9 @@ function draw() {
         dy = -dy;
     }
     else if(y + dy > canvas.height - ballRadius) {
+        //check wether the center of the ball is between the left  and the right edges of the paddle
         if( paddleX < x &&  paddleX + paddleWidth > x) {
-            dy = -dy;
+            dy = -dy; 
         }
         else {
             alert("GAME OVER");
