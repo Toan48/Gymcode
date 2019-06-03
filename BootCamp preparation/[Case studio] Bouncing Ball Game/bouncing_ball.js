@@ -10,7 +10,9 @@ var paddleWidth = 75;
 var paddleX = (canvas.width - paddleWidth)/2;
 var rightPressed = false;
 var leftPressed = false;
-var score = 0;
+//var score = 0;
+var start = new Date().getTime();
+var score = '0';
 
 console.log(x);
 console.log(paddleX);
@@ -53,6 +55,8 @@ function drawPaddle() {
 }
 
 function drawScore() {
+    var time = new Date().getTime() - start;
+    score = Math.floor(time / 1000);
     ctx.font = "16px Arial";
     ctx.fillStyle = "#0095DD";
     ctx.fillText("Score: "+score, 8, 20);
